@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+  <title>Face Recognition</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    canvas {
+      position: absolute;
+      top: 50;
+      left: 50;
+      height:500px;
+      width:500px;    
+    }
+
+label{
+  padding: 20px;
+  background: #515070; 
+  font-family: 'Ubuntu', sans-serif;
+  display: table;
+  color: #fff;
+  border-radius:5px;
+  box-shadow: 1px 2px 2px 1px #CCC; 
+}
+
+input[type="file"] {
+    display: none;
+}
+.message{
+  height:70px;
+}
+  </style>
+</head>
+<body>
+  <label> Choose an image
+    <input type="file" id="imageUpload" class="upload">
+  </label>
+  <div class="message">
+    <img class="preloader" src="https://digitalsynopsis.com/wp-content/uploads/2016/06/loading-animations-preloader-gifs-ui-ux-effects-18.gif" alt="" class="src">
+  </div>
+</body>
+</html>
